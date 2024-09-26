@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="./Assets/css/style.css">
+    <script src="./Assets/js/script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Weather Dashboard</h1>
+    </header>
+
+    <div class="container">
+        <nav>
+            <h2>Search for a City:</h2>
+            <form id="city-search-form">
+                <div class="search-container">
+                    <input type="text" id="city-search" name="city" placeholder="Enter city name">
+                </div>
+                <button type="submit">Search</button>
+            </form>
+            <hr>
+            <ul id="saved-cities-list" class="saved-cities-list">
+                <!-- Saved cities will be displayed here -->
+            </ul>
+        </nav>
+
+        <main>
+            <h2>Current Weather</h2>
+            <div class="task-card" id="current-weather-card">
+                <!-- Current weather information will be displayed here -->
+            </div>
+
+            <h2>5-Day Forecast:</h2>
+            <div class="forecast-container" id="forecast-container">
+                <!-- 5-day forecast information will be displayed here -->
+            </div>
+
+            <!-- Guess the Number Game -->
+            <section id="game-section">
+                <h2>Guess the Number Game</h2>
+                <p>I'm thinking of a number between 1 and 100. Can you guess it?</p>
+                <input type="number" id="guess-input" placeholder="Enter your guess" min="1" max="100">
+                <button id="guess-button">Guess</button>
+                <p id="result-message"></p>
+            </section>
+        </main>
+    </div>
+
+</body>
+
+</html>
